@@ -13,15 +13,21 @@ class MealController {
     
     // MARK: - CRUD Methods
     
+    var meals: [Meal] = []
+    var ingredients: [Ingredients] = []
+    
     func createMeal(mealName: String) {
         
         let meal = Meal(mealName: mealName)
+        meals.append(meal)
         saveToPersistentStore()
     }
     
     func addIngredientToMeal(ingredient: String) {
         
         let mealIngredient = Meal(ingredient: ingredient)
+        // Might need to change this append
+        meals.append(mealIngredient)
         saveToPersistentStore()
     }
     
@@ -31,6 +37,7 @@ class MealController {
                                      haveIngredient: haveIngredient,
                                      purchaseDate: purchaseDate,
                                      quantity: quantity)
+        ingredients.append(ingredient)
         
     }
     

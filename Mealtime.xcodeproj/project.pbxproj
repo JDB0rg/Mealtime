@@ -17,7 +17,7 @@
 		1183979021880B38005A1A9D /* MealPlanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1183978F21880B38005A1A9D /* MealPlanTableViewController.swift */; };
 		118397962188B4DB005A1A9D /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118397952188B4DB005A1A9D /* Meal.swift */; };
 		118397992188B4FB005A1A9D /* MealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118397982188B4FB005A1A9D /* MealController.swift */; };
-		1183979C2188D65B005A1A9D /* MealPlanDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1183979B2188D65B005A1A9D /* MealPlanDetailTableViewController.swift */; };
+		1183979F2188EC63005A1A9D /* MealPlanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1183979E2188EC63005A1A9D /* MealPlanDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		1183978F21880B38005A1A9D /* MealPlanTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanTableViewController.swift; sourceTree = "<group>"; };
 		118397952188B4DB005A1A9D /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		118397982188B4FB005A1A9D /* MealController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealController.swift; sourceTree = "<group>"; };
-		1183979B2188D65B005A1A9D /* MealPlanDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanDetailTableViewController.swift; sourceTree = "<group>"; };
+		1183979E2188EC63005A1A9D /* MealPlanDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				1183978F21880B38005A1A9D /* MealPlanTableViewController.swift */,
-				1183979B2188D65B005A1A9D /* MealPlanDetailTableViewController.swift */,
+				1183979E2188EC63005A1A9D /* MealPlanDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -212,10 +212,10 @@
 				1183978E21880A4F005A1A9D /* MainTabBarViewController.swift in Sources */,
 				1183977D2188091A005A1A9D /* Mealtime.xcdatamodeld in Sources */,
 				118397992188B4FB005A1A9D /* MealController.swift in Sources */,
+				1183979F2188EC63005A1A9D /* MealPlanDetailViewController.swift in Sources */,
 				118397962188B4DB005A1A9D /* Meal.swift in Sources */,
 				118397752188091A005A1A9D /* AppDelegate.swift in Sources */,
 				1183978A21880942005A1A9D /* CoreDataStack.swift in Sources */,
-				1183979C2188D65B005A1A9D /* MealPlanDetailTableViewController.swift in Sources */,
 				1183979021880B38005A1A9D /* MealPlanTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
