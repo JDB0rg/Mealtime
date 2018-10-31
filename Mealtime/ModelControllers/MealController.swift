@@ -11,34 +11,61 @@ import CoreData
 
 class MealController {
     
+    // MARK: - CRUD Properties
+    
+    var meals: [Meal] {
+        return loadMealFromPersistentStore()
+    }
+    
+    var ingredients: [Ingredients] {
+        return loadIngredientFromPersistentStore()
+    }
+    
     // MARK: - CRUD Methods
-    
-    var meals: [Meal] = []
-    var ingredients: [Ingredients] = []
-    
+        
     func createMeal(mealName: String) {
         
-        let meal = Meal(mealName: mealName)
-        meals.append(meal)
+        let _ = Meal(mealName: mealName)
         saveToPersistentStore()
     }
     
-    func addIngredientToMeal(ingredient: String) {
+//    func addIngredientToMealObject() {
+//        
+//        let meal = Meal(mealName: mealName, ingredient: [String])
+//        meal.addIngreditents(ingredient)
+//    }
+    
+    func addIngredientToMeal(mealName: String, ingredient: [String]) {
         
-        let mealIngredient = Meal(ingredient: ingredient)
-        // Might need to change this append
-        meals.append(mealIngredient)
+        let _ = Meal(mealName: mealName, ingredient: ingredient)
         saveToPersistentStore()
     }
     
     func createIngredient(ingredientName: String, haveIngredient: Bool, purchaseDate: Date, quantity: UInt16   ) {
         
-        let ingredient = Ingredients(ingredientName: ingredientName,
+        let _ = Ingredients(ingredientName: ingredientName,
                                      haveIngredient: haveIngredient,
                                      purchaseDate: purchaseDate,
                                      quantity: quantity)
-        ingredients.append(ingredient)
+        saveToPersistentStore()
         
+    }
+    
+    func deleteMeal(meal: Meal) {
+        
+        CoreDataStack.shared.mainContext.delete(meal)
+        saveToPersistentStore()
+    }
+    
+    func deleteIngredient(ingredient: Ingredients) {
+        
+        CoreDataStack.shared.mainContext.delete(ingredient)
+        saveToPersistentStore()
+    }
+    
+    func updateHaveIngredient(ingredients: Ingredients) {
+        ingredients.haveIngredient = !ingredients.haveIngredient
+        saveToPersistentStore()
     }
     
     // MARK: - Persistent Store Methods
@@ -51,6 +78,32 @@ class MealController {
             try moc.save()
         } catch {
             NSLog("Error saving managed object context\(error)")
+        }
+    }
+    
+    func loadMealFromPersistentStore() -> [Meal] {
+        
+        let fetchRequest: NSFetchRequest<Meal> = Meal.fetchRequest()
+        let moc = CoreDataStack.shared.mainContext
+        
+        do {
+            return try moc.fetch(fetchRequest)
+        } catch {
+            print("Error fetching from moc: \(error)")
+            return []
+        }
+    }
+    
+    func loadIngredientFromPersistentStore() -> [Ingredients] {
+        
+        let fetchRequest: NSFetchRequest<Ingredients> = Ingredients.fetchRequest()
+        let moc = CoreDataStack.shared.mainContext
+        
+        do {
+            return try moc.fetch(fetchRequest)
+        } catch {
+            print("Error fetching from moc: \(error)")
+            return []
         }
     }
     

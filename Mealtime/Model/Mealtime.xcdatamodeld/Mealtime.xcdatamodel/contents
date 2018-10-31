@@ -5,15 +5,15 @@
         <attribute name="ingredientName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="purchaseDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="meal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Meal" inverseName="ingredients" inverseEntity="Meal" syncable="YES"/>
+        <relationship name="meal" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Meal" inverseName="ingredients" inverseEntity="Meal" syncable="YES"/>
     </entity>
     <entity name="Meal" representedClassName="Meal" syncable="YES" codeGenerationType="class">
-        <attribute name="ingredient" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ingredient" optional="YES" attributeType="Transformable" customClassName="[String]" syncable="YES"/>
         <attribute name="mealName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="ingredients" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ingredients" inverseName="meal" inverseEntity="Ingredients" syncable="YES"/>
+        <relationship name="ingredients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ingredients" inverseName="meal" inverseEntity="Ingredients" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Meal" positionX="-300.77734375" positionY="47.91796875" width="128" height="90"/>
         <element name="Ingredients" positionX="-36" positionY="18" width="128" height="120"/>
+        <element name="Meal" positionX="-300.77734375" positionY="47.91796875" width="128" height="90"/>
     </elements>
 </model>

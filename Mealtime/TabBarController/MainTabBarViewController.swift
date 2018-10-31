@@ -28,5 +28,4 @@ class MainTabBarViewController: UITabBarController {
     */
     // MARK: - Properties
     
-    let mealController = MealController()
 }

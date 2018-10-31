@@ -12,13 +12,15 @@ import CoreData
 extension Meal {
     
     convenience init(mealName: String,
+                     ingredient: [String] = [],
                      context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
         
         self.init(context: context)
         self.mealName = mealName
+        self.ingredient = ingredient
     }
     
-    convenience init(ingredient: String,
+    convenience init(ingredient: [String],
                      context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
         
         self.init(context: context)

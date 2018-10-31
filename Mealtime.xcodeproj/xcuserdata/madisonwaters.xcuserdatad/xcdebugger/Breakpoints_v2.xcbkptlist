@@ -2,4 +2,146 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mealtime/ViewControllers/MealPlanTableViewController.swift"
+            timestampString = "562713682.9227591"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "fetchedResultsController"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mealtime.MealPlanTableViewController.fetchedResultsController.getter : __C.NSFetchedResultsController&lt;Mealtime.Meal&gt;"
+                  moduleName = "Mealtime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/madisonwaters/Desktop/iOS-dev/full-time/solo-projects/Mealtime2/Mealtime/ViewControllers/MealPlanTableViewController.swift"
+                  timestampString = "562707776.5971529"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
+                  offsetFromSymbolStart = "162">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.NSFetchedResultsController&lt;Mealtime.Meal&gt; in Mealtime.MealPlanTableViewController.fetchedResultsController.getter : __C.NSFetchedResultsController&lt;Mealtime.Meal&gt;"
+                  moduleName = "Mealtime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/madisonwaters/Desktop/iOS-dev/full-time/solo-projects/Mealtime2/Mealtime/ViewControllers/MealPlanTableViewController.swift"
+                  timestampString = "562707776.6033469"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "29">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mealtime.MealPlanTableViewController.fetchedResultsController.setter : __C.NSFetchedResultsController&lt;Mealtime.Meal&gt;"
+                  moduleName = "Mealtime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/madisonwaters/Desktop/iOS-dev/full-time/solo-projects/Mealtime2/Mealtime/ViewControllers/MealPlanTableViewController.swift"
+                  timestampString = "562707776.606594"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mealtime.MealPlanTableViewController.init(style: __C.UITableViewStyle) -&gt; Mealtime.MealPlanTableViewController"
+                  moduleName = "Mealtime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/madisonwaters/Desktop/iOS-dev/full-time/solo-projects/Mealtime2/Mealtime/ViewControllers/MealPlanTableViewController.swift"
+                  timestampString = "562707776.61042"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mealtime.MealPlanTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Mealtime.MealPlanTableViewController"
+                  moduleName = "Mealtime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/madisonwaters/Desktop/iOS-dev/full-time/solo-projects/Mealtime2/Mealtime/ViewControllers/MealPlanTableViewController.swift"
+                  timestampString = "562707776.6143301"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mealtime.MealPlanTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Mealtime.MealPlanTableViewController&gt;"
+                  moduleName = "Mealtime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/madisonwaters/Desktop/iOS-dev/full-time/solo-projects/Mealtime2/Mealtime/ViewControllers/MealPlanTableViewController.swift"
+                  timestampString = "562707776.619027"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mealtime/ViewControllers/MealPlanTableViewController.swift"
+            timestampString = "562713682.92342"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "numberOfSections(in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mealtime/ViewControllers/MealPlanTableViewController.swift"
+            timestampString = "562713682.9239891"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
